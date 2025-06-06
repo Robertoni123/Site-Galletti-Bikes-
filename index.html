@@ -17,40 +17,46 @@
       crossorigin="anonymous"
     ></script>
 </head>
+
+
 <body>
-    <nav class="navbar">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Galletti Bikes</a>
-            <img class="logo" width="150" height="27" src="./img/1000141617.jpg" alt="" />
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item"><a class="nav-link" aria-current="page" href="#">Bicicletas</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Acesórios</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Serviços / Oficina</a></li>
-              </ul>
-            </div>
-        </div>
-    </nav>
+   <nav class="navbar fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">GALLETTI BIKES</a>
+      <button id="toggle-theme">Modo Claro</button>
+
+    <img class="logo" width="200" height="35" src="./img/1000141617.jpg" alt="" />
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+<li class="nav-item"><a class="nav-link" aria-current="page" href="#frase" data-i18n="menuBicicletas">Bicicletas</a></li>
+        <li class="nav-item"><a class="nav-link" href="#capacete" data-i18n="menuAcessorios">Acessórios</a></li>
+       <li class="nav-item"><a class="nav-link" href="#servicos" data-i18n="menuServicos">Serviços / Oficina</a></li>>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
     <style>
       .navbar-toggler {
           border-color: rgba(255, 255, 255, 0.5);
       }
-
       .navbar-toggler-icon {
           background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
       }
     </style>
+
 
     <main>
         <section id="nino">
@@ -58,17 +64,18 @@
     </main>
     
 
-    <header id="bikes">
-
-        <section id="frase"><h1>Bicicletas</h1></section>
+    <header id="bikesoggi">
+      
+<section id="frase"><h1 data-i18n="tituloBicicletas">BICICLETAS</h1></section>
 
         <div class="cards-wrapper">
+          <img class="logoggi" src="./img/oggilog.png" alt="">
 
           <div class="card" style="width: 18rem;">
             <img src="./img/cattura-squadra-chapa.png" class="bike1" alt="" />
             <div class="card-body">
-              <h5 class="card-title">Cattura Squadra XX SL</h5>
-              <p class="card-text">
+            <h5 class="card-title" data-i18n="catturaTitulo">Cattura Squadra</h5>
+              <p class="card-text" data-i18n="catturaTexto">
                 NOVA Cattura Squadra!! Agora, com os novos grupos SRAM XX SL T-Type Transmission, o que era bom ficou ainda melhor. A SRAM desenvolveu o primeiro cassete com dentes narrow-wide do mundo, permitindo muita precisão e velocidade.
               </p>
             </div>
@@ -77,8 +84,8 @@
           <div class="card" style="width: 18rem;">
             <img src="./img/agile-pro-gx-2024-preto-bege.png" class="bike2" alt="" />
             <div class="card-body">
-              <h5 class="card-title">Agile Pro Gx</h5>
-              <p class="card-text">
+              <h5 class="card-title"data-i18n="agileTitulo">Agile Pro Gx</h5>
+              <p class="card-text"data-i18n="agileTexto">
                 Com um quadro de carbono super leve e o novo lower seat stay, essa bike é compatível com os sistemas mais avançados, como o Sram T-Type e Shimano com UDH, garante um visual limpo e aerodinâmico.
               </p>
             </div>
@@ -87,13 +94,258 @@
           <div class="card" style="width: 18rem;">
             <img src="./img/cattura-sport-amarela-chapa.png" class="bike3" alt="" />
             <div class="card-body">
-              <h5 class="card-title">Agile Pro Gx</h5>
-              <p class="card-text">
+              <h5 class="card-title"data-i18n="catturaTitulo">Cattura Sport</h5>
+              <p class="card-text"data-i18n="agileproTexto">
                 A Cattura Sport 2025 traz atualizações que vão revolucionar sua experiência sobre duas rodas. Com novas cores vibrantes e um quadro otimizado, esta bike é agora compatível com o sistema SRAM T-Type e Shimano com UDH, oferecendo ainda mais versatilidade e performance.
+              </p>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img src="./img/agile-sport-azul-vermelha.png" class="bike4" alt="" />
+            <div class="card-body">
+              <h5 class="card-title"data-i18n="agilesptTitulo">Agile Sport</h5>
+              <p class="card-text"data-i18n="agilesptTitulo">
+                A nova geração da Agile recebeu uma atualização no desenho da traseira da bike, que ganhou um seat-stay rebaixado mais rígido, ficando ainda mais leve. Para isso, ela aposta no grupo Shimano Deore 12V, na suspensão dianteira Manitou Markhor e em seu quadro de fibra de carbono super leve, com geometria moderna e agressiva.
               </p>
             </div>
           </div>
         </div>
     </header>
+
+<button type="button" class="botao-oggi" onclick="window.location.href='https://oggibikes.com.br/modelos/'" data-i18n="botaoTodasOggi">TODAS AS BIKES OGGI</button>
+
+  
+           <section id="bikescott">
+          
+           <img class="logoscott" src="./img/scott logo.jpg" alt="">
+
+          <div class="scott-wrapper">
+
+             <div class="card" style="width: 18rem;">
+            <img src="./img/scott glamber 20.png" class="bike4" alt="" />
+            <div class="card-body">
+              <h5 class="card-title"data-i18n="glamberTitulo">Scott Glamber 20</h5>
+              <p class="card-text"data-i18n="glamberTexto">
+                -Gambler Alloy Frame
+                -RS Boxxer Base 200mm Fork
+                -RS Vivid Coil Base 200mm Shock
+                -SRAM GX DH 7 Speed Drivetrain
+                -Sram 4 Piston Disc Brakes
+                -Maxxis Assegai/DHR II 2.5" DH Tires
+              </p>
+            </div>
+          </div>
+
+           <div class="card" style="width: 18rem;">
+            <img src="./img/scott bike1.png" class="bike4" alt="" />
+            <div class="card-body">
+              <h5 class="card-title"data-i18n="sparkTitulo">Scott Spark</h5>
+              <p class="card-text"data-i18n="sparkTexto">
+                - Forqueta RockShox SID Ultimate, Flight Attendant 120mm
+                - Amortecedor RockShox SIDLuxe Ultimate Flight Assistant Específico de 120 mm
+                - Transmissão SRAM XX Eagle AXS com manivela em carbono / Medidor de potência de eixo
+              </p>
+            </div>
+          </div>
+
+           <div class="card" style="width: 18rem;">
+            <img src="./img/image-removebg-preview.png" class="bike4" alt="" />
+            <div class="card-body">
+              <h5 class="card-title"data-i18n="ransomTitulo">Scott Ransom 900</h5>
+              <p class="card-text"data-i18n="ransomTexto">
+               -Quadro Ransom HMX
+               -Suspensão FOX 38 Grip2 Factory 170 mm
+               -FOX FLOAT X Nude, TracLoc, 170 mm
+               -Transmissão SRAM X0 AXS de 12 velocidades
+               -Travões de disco de 4 pistões SRAM Code
+               -Pneus Maxxis EXO+/DD
+              </p>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img src="./img/scott bike2.png" class="bike4" alt="" />
+            <div class="card-body">
+              <h5 class="card-title"data-i18n="scaleTitulo">Scott Scale RC</h5>
+              <p class="card-text"data-i18n="scaleTexto">
+                -Forqueta RockShox SID SL Select 3P Air 100 mm
+                 RideLoc / Remoto de 3 Posições
+                -Transmissão SRAM GX AXS de 12 velocidades
+                -Travões de disco SRAM de nível 4 com pistão
+                -Sistema de rodas Fulcrum Red Zone 300
+              </p>
+            </div>
+          </div>
+</div>
+<button type="button" class="botao-scott" onclick="window.location.href='https://www.scott-sports.com/br/pt/products/bike-bikes'"data-i18n="botaoTodasScott">TODAS AS BIKES SCOTT</button>      
+
+           </section>
+
+   <div class="acessorios">
+  <div id="capacete"> 
+    <img src="./img/1000142364.jpg" alt="Capacete de ciclismo">
+    <div class="conteudo-capacete">
+      <h1>Você arriscaria sua vida por não usar um capacete?</h1>
+      <p>Usar um capacete vai muito além de seguir regras — é um ato de autopreservação.
+        Em caso de quedas ou colisões, a cabeça é uma das partes mais vulneráveis do corpo. Um bom capacete pode ser a diferença entre um susto e uma tragédia. Ele absorve o impacto, protege o cérebro e salva vidas. Não importa se você é iniciante ou profissional: sua segurança deve vir sempre em primeiro lugar. Proteja-se. Pedale com consciência.</p>
+    </div>
+  </div>
+</div>
+
+<section class="acessorios-section">
+  <h2>Explore nossos acessórios para ciclismo</h2>
+
+  <div class="acessorios-grid">
+
+    <div class="acessorio-card" style="background-image: url('./img/capacete.jpg');">
+      <div class="overlay">
+        <h3>Capacetes</h3>
+        <p>Proteção e estilo para sua pedalada.</p>
+      </div>
+    </div>
+
+    <div class="acessorio-card" style="background-image: url('./img/garrafinha.jpg');">
+      <div class="overlay">
+        <h3>Garrafinhas</h3>
+        <p>Mantenha-se hidratado durante o passeio.</p>
+      </div>
+    </div>
+
+    <div class="acessorio-card" style="background-image: url('./img/banco.jpg');">
+      <div class="overlay">
+        <h3>Bancos</h3>
+        <p>Assentos confortáveis para longas pedaladas.</p>
+      </div>
+    </div>
+
+    <div class="acessorio-card" style="background-image: url('./img/roupas.jpg');">
+      <div class="overlay">
+        <h3>Roupas</h3>
+        <p>Moda e funcionalidade para ciclistas.</p>
+      </div>
+    </div>
+
+    <div class="acessorio-card" style="background-image: url('./img/oculos.jpg');">
+      <div class="overlay">
+        <h3>Óculos</h3>
+        <p>Proteção contra vento, sol e poeira.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<section id="servicos" class="py-5 bg-dark">
+  <div class="container">
+    <h2 class="text-center mb-5 text-primary fw-bold">Nossos Serviços</h2>
+    
+    <div class="row justify-content-center g-4">
+
+      <!-- Card 1 -->
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card border border-primary shadow-lg h-100 text-center">
+          <img src="./img/revisao.jpg" class="rounded-circle mx-auto mt-4" alt="Revisão" style="width: 120px; height: 120px; object-fit: cover; border: 4px solid #3578dc;">
+          <div class="card-body">
+          <h5 class="card-title fw-bold" data-i18n="servicoRevisoes">Revisões</h5>
+           <p class="card-text" data-i18n="servicoRevisoesDesc">Revisões especializadas para sua bike estar sempre em dia.</p>
+           <p class="text-primary fw-semibold" data-i18n="servicoPrecoA partir">A partir de R$ 180,00</p>
+            <p class="text-primary">Pix, cartão ou dinheiro</p>
+            <a href="https://wa.me/5511953384248?text=Olá,+quero+agendar+uma+revisão+de+bicicleta." target="_blank" class="btn btn-outline-primary mt-2">Agendar</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-sm-6 col-md-4 col-lg-3">
+<div class="card border border-primary shadow-lg h-100 text-center">
+          <img src="./img/pi.webp" class="rounded-circle mx-auto mt-4" alt="Pintura" style="width: 120px; height: 120px; object-fit: cover; border: 4px solid #3578dc;">
+          <div class="card-body">
+            <h5 class="card-title fw-bold" data-i18n="servicopintura">Pintura</h5>
+            <p class="card-text" data-i18n="servicoRevisoesdesc">Personalize sua bike com pintura de alta qualidade.</p>
+            <p class="text-primary fw-semibold" data-i18n="servicoRevisoesprec">A partir de R$ 200,00</p>
+            <p class="text-primary">Pix ou parcelamento</p>
+            <a href="https://wa.me/5511953384248?text=Olá,+quero+agendar+uma+revisão+de+bicicleta." target="_blank" class="btn btn-outline-primary mt-2">Agendar</a>       
+   </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card border border-primary shadow-lg h-100 text-center">
+          <img src="./img/limpeza.jpg" class="rounded-circle mx-auto mt-4" alt="Limpeza" style="width: 120px; height: 120px; object-fit: cover; border: 4px solid #3578dc;">
+          <div class="card-body">
+            <h5 class="card-title fw-bold" data-i18n="servicoLimpeza">Limpeza</h5>
+            <p class="card-text" data-i18n="servicoRevisoesdesc">Limpeza técnica com desmontagem e lubrificação.</p>
+            <p class="text-primary fw-semibold" data-i18n="servicoRevisoesprec">R$ 100,00</p>
+            <p class="text-primary">Pix, cartão ou dinheiro</p>
+            <a href="https://wa.me/5511953384248?text=Olá,+quero+agendar+uma+revisão+de+bicicleta." target="_blank" class="btn btn-outline-primary mt-2">Agendar</a>   
+                 </div>
+        </div>
+      </div>
+
+         <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card border border-primary shadow-lg h-100 text-center">
+          <img src="./img/bikefit.jpg" class="rounded-circle mx-auto mt-4" alt="Limpeza" style="width: 120px; height: 120px; object-fit: cover; border: 4px solid #3578dc;">
+          <div class="card-body">
+            <h5 class="card-title fw-bold" data-i18n="servicoBikeFit">BikeFit</h5>
+            <p class="card-text"data-i18n="servicoBikeFitdesc">BikeFit Metodologia Shimano Static. Milímetro que fazem a diferença</p>
+            <p class="text-primary fw-semibold"data-i18n="servicoBikeFitprec">R$ 300,00</p>
+            <p class="text-primary">Pix, cartão ou dinheiro</p>
+            <a href="https://wa.me/5511953384248?text=Olá,+quero+agendar+uma+revisão+de+bicicleta." target="_blank" class="btn btn-outline-primary mt-2">Agendar</a>   
+                 </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-info">
+      <div class="contact-item">
+      <strong data-i18n="contatoWhatsApp">WhatsApp:</strong> 
+        <a href="https://wa.me/5511953384248" target="_blank" rel="noopener noreferrer">+55 11 95338-4248</a>
+      </div>
+      <div class="contact-item">
+      <strong data-i18n="contatoInstagram">Instagram:</strong> 
+        <a href="https://instagram.com/gallettibikes" target="_blank" rel="noopener noreferrer">@gallettibikes</a>
+      </div>
+      <div class="contact-item">
+      <strong data-i18n="contatoEndereco">Endereço:</strong> Rua Darwin, 422, Jd Santo Amaro
+
+      </div>
+    </div>
+   <div class="footer-copy" data-i18n="direitos">© 2025 Galletti Bikes. Todos os direitos reservados.</div>
+ 
+  </div>
+</footer>
+
+<!-- botao voltar ao topo -->
+<button id="btnTopo" style="display:none; position:fixed; bottom:30px; right:30px; padding:10px 15px; font-size:16px; border:none; border-radius:5px; background:#4ea8ff; color:#fff; cursor:pointer; box-shadow: 0 2px 8px rgba(0,0,0,0.3);">Topo</button>
+
+
+<!-- Modal Bootstrap -->
+<div class="modal fade" id="bikeModal" tabindex="-1" aria-labelledby="bikeModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="bikeModalLabel">Detalhes da Bicicleta</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        <img id="modalImg" src="" class="img-fluid mb-3" />
+        <p id="modalText"></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<script src="script.js"></script>
 </body>
 </html>
